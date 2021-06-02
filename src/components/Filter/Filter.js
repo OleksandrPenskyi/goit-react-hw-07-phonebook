@@ -2,7 +2,7 @@ import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { filterValue } from '../../redux/contacts/contacts-actions';
+import { contactsSelectors, filterValue } from '../../redux/contacts';
 
 import styles from './Filter.module.css';
 
@@ -27,7 +27,7 @@ const Filter = ({ onChangeFilter, filter }) => {
 };
 
 const mapStateToProps = state => ({
-  filter: state.contacts.filter,
+  filter: contactsSelectors.getFilter(state),
 });
 
 const mapDispatchToProps = dispatch => ({

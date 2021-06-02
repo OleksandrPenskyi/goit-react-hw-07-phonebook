@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import operations from '../../../redux/contacts/contacts-operations';
 import { connect } from 'react-redux';
+import { contactsOperations } from '../../../redux/contacts';
 
 import styles from './ContactListItem.module.css';
 
@@ -21,8 +21,9 @@ const ContactListItem = ({ name, number, id, deleteContact }) => {
     </li>
   );
 };
+
 const mapDispatchToProps = dispath => ({
-  deleteContact: id => dispath(operations.deleteContact(id)),
+  deleteContact: id => dispath(contactsOperations.deleteContact(id)),
 });
 
 export default connect(null, mapDispatchToProps)(ContactListItem);
