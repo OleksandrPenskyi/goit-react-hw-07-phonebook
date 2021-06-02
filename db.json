@@ -1,19 +1,19 @@
 {
   "contacts": [
     {
-      "id": "b34c30d8-426a-45f9-b5fa-b997da339e16",
+      "name": "Spiderman",
+      "number": "123456",
+      "id": 1
+    },
+    {
+      "name": "Batman",
+      "number": "654321",
+      "id": 2
+    },
+    {
       "name": "Rosie Simpson",
-      "number": "3242-324-3242"
-    },
-    {
-      "id": "f6e19497-51e9-4dc0-b47f-d9a546ddc6fa",
-      "name": "asd",
-      "number": "3242-324-3242"
-    },
-    {
-      "id": "e1eaf1e1-0e48-482a-8e0b-f1f8621aa640",
-      "name": "Sasha",
-      "number": "21312321"
+      "number": "21312321",
+      "id": 3
     }
   ]
 }

@@ -31,6 +31,6 @@ export default connect(null, mapDispatchToProps)(ContactListItem);
 ContactListItem.propTypes = {
   name: PropTypes.string.isRequired,
   number: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   deleteContact: PropTypes.func.isRequired,
 };

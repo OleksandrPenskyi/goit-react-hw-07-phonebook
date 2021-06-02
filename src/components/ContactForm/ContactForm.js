@@ -17,7 +17,7 @@ class ContactForm extends Component {
       PropTypes.shape({
         name: PropTypes.string.isRequired,
         number: PropTypes.string.isRequired,
-        id: PropTypes.string.isRequired,
+        id: PropTypes.number.isRequired,
       }),
     ).isRequired,
     addNewContact: PropTypes.func.isRequired,
@@ -35,7 +35,6 @@ class ContactForm extends Component {
 
     const { name, number } = this.state;
     const newContact = {
-      id: uuidv4(),
       name,
       number,
     };
@@ -64,7 +63,6 @@ class ContactForm extends Component {
   render() {
     const randomIdForName = uuidv4();
     const randomIdForNumber = uuidv4();
-
     const { name, number } = this.state;
 
     return (

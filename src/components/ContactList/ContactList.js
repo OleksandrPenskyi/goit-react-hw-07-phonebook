@@ -11,7 +11,7 @@ class ContactList extends Component {
       PropTypes.shape({
         name: PropTypes.string.isRequired,
         number: PropTypes.string.isRequired,
-        id: PropTypes.string.isRequired,
+        id: PropTypes.number.isRequired,
       }),
     ).isRequired,
     getContacts: PropTypes.func.isRequired,
@@ -24,7 +24,6 @@ class ContactList extends Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       <ul>
         {this.props.filteredContacts.map(({ name, number, id }) => (
